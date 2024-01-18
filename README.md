@@ -1,23 +1,56 @@
-# swift-vm-cli
-Boot VM ISOs with serial using Apple Hypervisor Framework
+# Swift VM CLI
 
-Requirements
-* Apple Silicon based Mac
-* macOS 13.0 Ventura or later
-* Xcode
+**Boot VM ISOs with serial using Apple Hypervisor Framework**
 
-After cloning this repo and building with xcode run the project to show the build path:
+## Requirements
 
-```
-Usage: /Users/jmaloney/Library/Developer/Xcode/DerivedData/swift-vm-cli-hhgddqysbvcjwzgcfoizuqjjkrea/Build/Products/Debug/swift-vm-cli <iso-path>
-Program ended with exit code: 64
-```
-Navigate to this directory and run the application using ISO file as arugment:
+To use Swift VM CLI, ensure that your system meets the following requirements:
 
-```
-cd /Users/jmaloney/Library/Developer/Xcode/DerivedData/swift-vm-cli-hhgddqysbvcjwzgcfoizuqjjkrea/Build/Products/Debug/
-```
+- **Apple Silicon based Mac:** Swift VM CLI relies on Apple's Hypervisor Framework, which is available on Macs with Apple Silicon architecture.
 
-```
-./swift-vm-cli /Users/jmaloney/Downloads/ubuntu-22.04.2-live-server-arm64.iso
-```
+- **macOS 13.0 Ventura or later:** Make sure you are running macOS 13.0 Ventura or a later version. This is necessary for compatibility with the Apple Hypervisor Framework.
+
+- **Xcode:** You need to have Xcode installed on your system. If not already installed, you can download and install Xcode from the App Store or [Apple's official website](https://developer.apple.com/xcode/).
+
+Ensure that these prerequisites are met before proceeding with the build and usage of Swift VM CLI.
+
+## Getting Started
+
+1. Clone this repository to your local machine:
+
+    ```bash
+    git clone https://github.com/your-username/swift-vm-cli.git
+    ```
+
+2. Build the project using Xcode:
+
+    ```bash
+    cd swift-vm-cli
+    xcodebuild
+    ```
+
+3. Run the project to display the build path:
+
+    ```bash
+    Usage: <path-to-built-executable> <iso-path>
+    ```
+
+    Example:
+
+    ```bash
+    /path/to/built/executable/swift-vm-cli /path/to/your/iso-file.iso
+    ```
+
+4. Navigate to the directory containing the built executable:
+
+    ```bash
+    cd /path/to/built/executable/
+    ```
+
+5. Run the application using an ISO file as an argument:
+
+    ```bash
+    ./swift-vm-cli /path/to/your/iso-file.iso
+    ```
+
+Make sure to replace placeholders like `<path-to-built-executable>` and `<path/to/your/iso-file.iso>` with the actual paths.
